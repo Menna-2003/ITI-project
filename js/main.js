@@ -46,8 +46,6 @@ LightMode.addEventListener("click", (e) => {
 //        **************           Start animation on scroll      **************
 
 let texts = document.querySelectorAll(".animationText");
-let sentence = document.querySelectorAll(".word")
-
 
 window.addEventListener("scroll", () => {
     let triggerBottom = (window.innerHeight / 5) * 4;
@@ -59,17 +57,6 @@ window.addEventListener("scroll", () => {
             text.classList.add("show");
         } else {
             text.classList.remove("show");
-        }
-    });
-
-
-    sentence.forEach((word) => {
-        let sentenceTop = word.getBoundingClientRect().top;
-
-        if (sentenceTop < triggerBottom) {
-            word.classList.add("show");
-        } else {
-            word.classList.remove("show");
         }
     });
 });
