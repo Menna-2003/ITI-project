@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+body {
+    height: 1000vb;
+}
 :root {
     --main-color: #d25b38;
     --transparent-color: #e69e97;
@@ -13,9 +15,8 @@
     --Bebas-Neue: "Bebas Neue", sans-serif;
     --Open-Sans: "Open Sans", sans-serif;
 }
-
 #color-mode {
-    position: absolute;
+    position: fixed;
     right: 0;
     top: 20px;
     display: grid;
@@ -33,9 +34,11 @@
 #light i {
     font-size: 25px;
 }
+
 /* start section two */
 
 .two {
+    margin-top: 100vb;
     width: 100%;
     height: 90vb;
 }
@@ -46,10 +49,10 @@
     display: flex;
     justify-content: center;
     gap: 50px;
+    overflow: hidden;
 }
 .two .container .text {
     width: 255px;
-    /* transform: translateX(30%); */
 }
 .two .container .text h1 {
     text-transform: uppercase;
@@ -61,8 +64,76 @@
     letter-spacing: 1px;
     font-weight: 500;
 }
-.two .container .text h1 span {
+.two .container .text h1 span.s {
     color: var(--main-color);
+}
+.two .container .text h1 span.f {
+    position: relative;
+}
+.two .container .text h1 span.s {
+    position: relative;
+}
+.two .container .text h1 span.t {
+    position: relative;
+}
+.two .container .text h1 span.f::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 1px solid var(--main-color);
+    background-color: var(--main-color);
+}
+.two .container .text h1 span.f.show::after{
+    animation: typingF 1s ;
+}
+.two .container .text h1 span.s::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 1px solid var(--text-color);
+    background-color: var(--text-color);
+}
+.two .container .text h1 span.s.show::after{
+    animation: typingS 1s ;
+    animation-delay: 0.5s;
+}
+.two .container .text h1 span.t::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-left: 1px solid var(--main-color);
+    background-color: var(--transparent-color);
+}
+.two .container .text h1 span.t.show::after{
+    animation: typingT 1s ;
+    animation-delay: 1s;
+}
+@keyframes typingF {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+@keyframes typingS {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+@keyframes typingT {
+    100% {
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
 }
 .two .container .text p {
     line-height: 1.2;
@@ -136,11 +207,17 @@
     position: absolute;
     left: 50%;
     transform: translateX(-50%) rotateY(180deg);
-    border: 7px solid rgb(255 164 138);
+    border: 7px solid var(--main-color);
     border-radius: 50%;
     background-color: #fff;
-    /* z-index: 100; */
     color: var(--text-color);
+}
+.animationText {
+    transform: translateX(400%);
+    transition: all 0.5s ease-in-out;
+}
+.animationText.show {
+    transform: translateX(0);
 }
 
 /* end section two */
