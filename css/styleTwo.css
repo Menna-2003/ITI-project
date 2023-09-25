@@ -116,6 +116,9 @@ body {
 .two .container .text h1 span.t.show::after{
     animation: typingT 1s ;
     animation-delay: 1s;
+
+
+    
 }
 @keyframes typingF {
     100% {
