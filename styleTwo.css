@@ -22,7 +22,7 @@
     margin: auto;
     height: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
 }
 .two .container .text {
     width: 350px;
