@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #d25b38;
+    --text-color: #454443;
+    --ourSpecialService-background-color: #f4f2f2;
+}
+
+/* start section two */
+
+.two {
+    width: 100%;
+    height: 90vb;
+}
+.two .container {
+    width: 95%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.two .container .text {
+    width: 350px;
+    height: 100%;
+}
+.two .container .box {
+    width: 350px;
+    height: 100%;
+    background-image: url(styleTwo.css);
+    background-size: cover;
+    position: relative;
+    /* transform: translateX(-100%); */
+    display: grid;
+}
+.two .container .box .overlay {
+    background-color: rgba(255, 126, 94, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+}
+.two .container .box .section {
+    display: flex;
+    color: #fff;
+    position: relative;
+}
+.two .container .box .section .fixed {
+    position: relative;
+    display: grid;
+    width: 90%;
+    justify-items: end;
+    align-items: center;
+}
+.two .container .box .section .fixed h2 {
+}
+.two .container .box .section .pionter {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    /* background-color: #000; */
+    border: 8px solid #000;
+    border-radius: 50%;
+    right: -20px;
+}
+.two .container .box .section .fixed:hover + .hidden {
+    opacity: 1;
+}
+.two .container .box .section .hidden {
+    /* display: none; */
+    position: absolute;
+    right: -125%;
+    width: 400px;
+    color: #000;
+    opacity: 0.5;
+}
+
+/* end section two */
