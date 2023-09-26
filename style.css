@@ -24,7 +24,7 @@
 .five .part1 .packs {
     width: 65%;
     display: flex;
-    gap: 10px;
+    gap: 20px;
 }
 .five .part1 span:first-child {
     font-size: 50px;
@@ -36,12 +36,13 @@
     text-transform: uppercase;
 }
 .five .part1 h3 {
-    font-size: 45px;
+    font-size: 25px;
     color: #454443;
+    text-transform: uppercase;
 }
-.five div .part1 .pac1,
-.five div .part1 .pac2,
-.five div .part1 .pac3 {
+.five  .part1 .pac1,
+.five  .part1 .pac2,
+.five  .part1 .pac3 {
     /* position: relative;
     left: 350px;
     bottom: 40px; */
@@ -73,6 +74,11 @@
 .five .part2-left {
     width: 50%;
 }
+/*.five .part2-left i{
+    display: inline;
+    vertical-align: bottom;
+    padding: 0 0 0 280px;
+}*/
 /* .five .part2-left {
     display: inline-block;
     width: 40%;
@@ -105,6 +111,11 @@
 .five .part2-left p {
     padding: 5px;
     text-align: center;
+}
+.five .part2-left span{
+    display: block;
+        color: #d25b38;
+    text-transform: uppercase;
 }
 .five .part3 {
     background-color: #f4f2f2;
