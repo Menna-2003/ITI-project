@@ -6,11 +6,34 @@
         <title>Document</title>
         <link rel="stylesheet" href="icon/all.min.css">
         <style>
-            * {
+        * {
                 margin: 0;
                 padding: 0;
                 box-sizing: border-box;
             }
+            @media (max-width: 1000px) {
+                .three .divclass{
+                    grid-template-columns: repeat(2, 200px);
+                    grid-template-rows: repeat(3, 150px);
+                }
+            }
+            @media (max-width: 680px) {
+                .three {
+                    display: grid;
+                    justify-content: center;
+                    justify-items: center;
+                }
+                .three .divclass{
+                    width: 100%;
+                }
+            }
+            @media (max-width: 450px){
+                .three .divclass{
+                    grid-template-columns: repeat(1, 200px);
+                    grid-template-rows: repeat(6, 150px);
+                }
+            }
+            
             .three {
                 padding: 10px 30px;
                 height: 90vb;
@@ -20,7 +43,6 @@
                 display: flex;
                 align-items: center;
                 position: relative;
-                overflow: scroll;
             }
             .three .divclass {
                 width: 65%;
@@ -33,9 +55,14 @@
                 width: 35%;
                 text-align: center;
             }
+             .three h3 {
+                color: red;
+                text-align: center;
+            }
             .three .divclass .box {
                 background-color: white;
                 border: 1px solid white;
+                text-align: center;
             }
             .three2 {
                 padding: 10px 30px;
@@ -46,62 +73,64 @@
                 display: flex;
                 align-items: center;
                 position: relative;
-                overflow: scroll;
             }
             .three2 .divthree2 {
                 width: 65%;
                 display: grid;
                 gap: 10px;
-                grid-template-columns: repeat(2, 200px);
-                grid-template-rows: repeat(2, 150px);
+                grid-template-columns: repeat(3, 200px);
+                grid-template-rows: repeat(3, 150px);
             }
             .three2 h2 {
                 width: 35%;
                 text-align: center;
             }
-            .three2 .divthree2 .box2 {
-                background-color: white;
-                border: 1px solid white;
+            .m1 {
+                grid-template-columns: repeat(1,20%);
+                grid-template-rows: repeat(3,20%);
             }
-
+            .m2 {
+                grid-template-columns: repeat(1,20%);
+                grid-template-rows: repeat(3,20%);
+            }
         </style>
     </head>
     <body>
         <div class="three">
             <h2>
                 OUR <br>
-                SPECIAL <br>
+                <span style="color:red">SPECIAL</span> <br>
                 SERVICES
             </h2>
             <div class="divclass">
                 <div class="box">
                     <i class="fa-brands fa-facebook"></i>
-                    <h1>designer</h1>
+                    <h3>designer</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut veritatis omnis nesciunt hic fuga?</p>
                 </div>
                 <div class="box">
                     <i></i>
-                    <h1>designer</h1>
+                    <h3>designer</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut veritatis omnis nesciunt hic fuga?</p>
                 </div>
                 <div class="box">
                     <i></i>
-                    <h1>designer</h1>
+                    <h3>designer</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut veritatis omnis nesciunt hic fuga?</p>
                 </div>
                 <div class="box">
                     <i></i>
-                    <h1>designer</h1>
+                    <h3>designer</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut veritatis omnis nesciunt hic fuga?</p>
                 </div>
                 <div class="box">
                     <i></i>
-                    <h1>designer</h1>
+                    <h3>designer</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut veritatis omnis nesciunt hic fuga?</p>
                 </div>
                 <div class="box">
                     <i></i>
-                    <h1>designer</h1>
+                    <h3>designer</h3>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ut veritatis omnis nesciunt hic fuga?</p>
                 </div>
             </div>
@@ -109,29 +138,39 @@
         <div class="three2">
             <h2>
                 LATEST<br>
-                DESIGN<br>
+                <span style="color: red;">DESIGN</span><br>
                 BLOG
             </h2>
             <div class="divthree2">
-                <div class="box2">
+                <div class="m1">
+                     <div class="box2">
+                  <img src="C:\Users\dell\Desktop\Post Image Place here2.png">
+                  </div>
+                 <div class="box2">
+                  <img src="C:\Users\dell\Desktop\Post Image Place here4.png">
+              </div> 
+              <div class="box2">
+                  <img src="C:\Users\dell\Desktop\Post Image Place here3.png">
+                  </div>
+                </div>
+                <div class="m2">
+                     <div class="box2">
                   <p>
-                <img src="C:\Users\dell\Desktop\Post Image Place here2.png">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, tenetur!
             </p>  
                 </div>
                 <div class="box2">
                    <p>
-                <img src="C:\Users\dell\Desktop\Post Image Place here3.png">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, tenetur!
             </p> 
                 </div>
-            <div class="box2">
+                 <div class="box2">
                 <p>
-                <img src="C:\Users\dell\Desktop\Post Image Place here4.png">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, tenetur!
             </p>
             </div>
-            <div class="box2">
+                </div>
+             <div class="box2 3">
                 <p>
                 <img src="C:\Users\dell\Desktop\Post Image Place here.png">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, tenetur!
