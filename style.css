@@ -16,29 +16,37 @@
     /* position: relative;
     top: 160px;
     left: 50px; */
-    font-size: 40px;
+    font-size: 60px;
     color: #454443;
     text-transform: uppercase;
     width: 35%;
+    padding: 20px 0 0 100px;
 }
 .five .part1 .packs {
     width: 65%;
     display: flex;
     gap: 20px;
 }
+.five .part1 .packs i{
+    
+    font-size: 3vw;
+    margin: 15px;
+}
 .five .part1 span:first-child {
-    font-size: 50px;
+    font-size: 60px;
 }
 .five .part1 span {
     display: block;
     color: #d25b38;
     font-size: 20px;
     text-transform: uppercase;
+    margin: 5px;
 }
 .five .part1 h3 {
     font-size: 25px;
     color: #454443;
     text-transform: uppercase;
+    margin: 8px;
 }
 .five  .part1 .pac1,
 .five  .part1 .pac2,
@@ -48,7 +56,7 @@
     bottom: 40px; */
     display: inline-block;
     background-color: white;
-    padding: 5px;
+    padding: 10px 5px 20px;
     width: 250px;
     text-align: center;
 }
@@ -72,7 +80,7 @@
     display: flex;
 }
 .five .part2-left {
-    width: 50%;
+    width: 75%;
 }
 /*.five .part2-left i{
     display: inline;
@@ -85,7 +93,7 @@
     border: 2px solid red;
 } */
 .five .part2-right {
-    width: 50%;
+    width: 25%;
     overflow: hidden;
     /* height: 100%; */
     /* position: relative; */
@@ -97,26 +105,38 @@
     width: 100%;
     /* height: 365px; */
 }
+.five .part2 .part2-left .address,
+.five .part2 .part2-left .call,
+.five .part2 .part2-left .email,
+.five .part2 .part2-left .website{
+    padding: 5px ;
+    margin: 20px;
+    font-size: 20px;
+}
 .five .part2 .part2-left h2 {
     font-size: 50px;
     text-transform: uppercase;
     padding: 15px 30px;
     color: #454443;
+    
 }
 .five .part2 .part2-left h3 {
     color: #d25b38;
     text-transform: uppercase;
-    text-align: center;
+    
 }
 .five .part2-left p {
-    padding: 5px;
-    text-align: center;
+    padding: 5px; 
+    margin: 3px; 
+    font-size: 18px;
 }
+
 .five .part2-left span{
     display: block;
-        color: #d25b38;
+    color: #d25b38;
     text-transform: uppercase;
 }
+
 .five .part3 {
     background-color: #f4f2f2;
     text-align: center;
@@ -130,3 +150,27 @@
     transform: translate(0, -50%);
     font-size: 15px;
 }
+@media only screen and (min-width: 600px){
+    .row::after{
+        content: '';
+        clear: both;
+        display: table;
+    }
+    [class*="col-"]{
+        float: left;
+    }
+    .col-1{width: 8.33%;}
+    .col-2{width: 16.66%;}
+    .col-3{width: 25%;}
+    .col-4{width: 33.33%;}
+    .col-5{width: 41.66%;}
+    .col-6{width: 50%;}
+    .col-7{width: 58.33%;}
+    .col-8{width: 66.66%;}
+    .col-9{width: 75%;}
+    .col-10{width: 83.33%;}
+    .col-11{width: 91.66%;}
+    .col-12{width: 100%;}
+}  
+
+
