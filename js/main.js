@@ -4,12 +4,11 @@ let darkMode = document.getElementById("dark");
 let LightMode = document.getElementById("light");
 
 let sectionTwo = document.getElementById("two");
-let darkModetext = document.getElementsByClassName("dark-mode");
+let darkModetext = document.getElementsByClassName("darkMode");
 let icons = document.getElementsByClassName("fa-solid fa-tag");
 
 if (window.localStorage.getItem("color")) {
     sectionTwo.style.backgroundColor = window.localStorage.getItem("color");
-
     darkMode.classList.remove("active");
 }
 
@@ -33,7 +32,7 @@ LightMode.addEventListener("click", (e) => {
     sectionTwo.style.backgroundColor = e.currentTarget.dataset.color;
 
     for (let i = 0; i < darkModetext.length; i++) {
-        darkModetext[i].style.color = "#454443";
+        darkModetext[i].style.color = "#000";
     }
     for (let i = 0; i < icons.length; i++) {
         icons[i].style.backgroundColor = "#fff";
