@@ -150,7 +150,7 @@
     transform: translate(0, -50%);
     font-size: 15px;
 }
-@media only screen and (min-width: 600px){
+/*@media only screen and (min-width: 600px){
     .row::after{
         content: '';
         clear: both;
@@ -171,6 +171,6 @@
     .col-10{width: 83.33%;}
     .col-11{width: 91.66%;}
     .col-12{width: 100%;}
-}  
+} */ 
 
 
