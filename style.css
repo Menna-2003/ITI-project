@@ -2,7 +2,39 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: var(--Bebas-Neue);
 }
+
+:root {
+    --main-color: #d25b38;
+    --transparent-color: #e69e97;
+    --transparent-color2: rgba(210, 91, 56, 50%);
+    --text-color: #454443;
+    --ourSpecialService-background-color: #f4f2f2;
+    --Bebas-Neue: "Bebas Neue", sans-serif;
+    --Open-Sans: "Open Sans", sans-serif;
+}
+#color-mode {
+    position: fixed;
+    right: 0;
+    top: 20px;
+    display: grid;
+    background-color: #d25b38;
+    padding: 6px;
+    gap: 5px;
+    z-index: 10;
+}
+#dark {
+    text-align: center;
+}
+#light {
+    text-align: center;
+}
+#dark i,
+#light i {
+    font-size: 25px;
+}
+
 .container-yara {
     overflow-x: hidden;
     width: 100%;
@@ -19,7 +51,7 @@
     justify-content: space-around;
 }
 .container-yara-one .text {
-    font-size: 50px;
+    font-size: 65px;
     width: 30%;
     text-transform: uppercase;
 }
@@ -43,10 +75,10 @@
     margin-top: 20px;
 }
 .container-yara-one .top h3 {
-    font-size: 30px;
+    font-size: 40px;
 }
 .container-yara-one .top h5 {
-    font-size: 13px;
+    font-size: 21px;
     margin-top: 10px;
 }
 .container-yara-one .text2 {
@@ -100,8 +132,9 @@
     width: 95%;
     height: auto;
     margin: 175px auto 0;
-    font-size: 35px;
+    font-size: 65px;
     text-transform: uppercase;
+    text-align: center;
 }
 @media (min-width: 800px) {
     .container-yara-two .grid {
@@ -129,11 +162,12 @@
     }
     .container-yara-two .grid .text {
         grid-row: 2 / -1;
-        width: 100%;
+        width: 90%;
         height: auto;
         margin: 175px auto 0;
-        font-size: 35px;
+        font-size: 50px;
         text-transform: uppercase;
+        text-align: start;
     }
     .container-yara-two .grid img:nth-child(5) {
         width: 100%;
