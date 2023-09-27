@@ -7,81 +7,86 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="stylesheet" href="./fonts/css/all.min.css" />
     </head>
-    <style>
-
-    </style>
+    <style></style>
     <body>
+        <div id="color-mode">
+            <div id="dark" data-color="black"><i class="fa-solid fa-moon"></i></div>
+            <div id="light" data-color="white" class="active"><i class="fa-solid fa-sun" style="color: #ffffff"></i></div>
+        </div>
         <div class="five">
-            <div class="part1">
-                <h2>Our <span>Desigins</span> Package</h2>
+            <div class="part1" id="part1">
+                <h2 class="textMode">Our<span>Desigins</span>Package</h2>
                 <div class="packs">
-                    <div class="pac1">
-                        <i class="fa-regular fa-lightbulb"></i>
-                        <h3>designer name</h3>
-                        <span> garphic designer </span><br>
-                        <p>
+                    <div class="pac1 boxes">
+                        <i class="fa-regular fa-lightbulb textMode"></i>
+                        <h3 class="textMode" >designer name</h3>
+                        <span> garphic designer </span><br />
+                        <p class="textMode" >
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda provident error laboriosam ratione non adipisci! Animi harum maiores non culpa qui repellendus illum
                             laborum voluptates.
-                        </p><br>
-                        <h3>$50</h3><br>
+                        </p>
+                        <br />
+                        <h3  class="textMode" >$50</h3>
+                        <br />
                         <button>Read more</button>
                     </div>
-                    <div class="pac2">
-                        <i class="fa-solid fa-cart-shopping" ></i>
-                        <h3>designer name</h3>
-                        <span> garphic designer </span><br>
-                        <p>
+                    <div class="pac2 boxes">
+                        <i class="fa-solid fa-cart-shopping textMode"></i>
+                        <h3  class="textMode" >designer name</h3>
+                        <span> garphic designer </span><br />
+                        <p class="textMode" >
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda provident error laboriosam ratione non adipisci! Animi harum maiores non culpa qui repellendus illum
                             laborum voluptates.
-                        </p><br>
-                        <h3 style="color: #d25b38">$500</h3><br>
+                        </p>
+                        <br />
+                        <h3 style="color: #d25b38">$500</h3>
+                        <br />
                         <button>Read more</button>
                     </div>
-                    <div class="pac3">
-                        <i class="fa-regular fa-image"></i>
-                        <h3>designer name</h3>
-                        <span> garphic designer </span><br>
-                        <p>
+                    <div class="pac3 boxes">
+                        <i class="fa-regular fa-image textMode"></i>
+                        <h3 class="textMode" >designer name</h3>
+                        <span> garphic designer </span><br />
+                        <p class="textMode" >
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda provident error laboriosam ratione non adipisci! Animi harum maiores non culpa qui repellendus illum
                             laborum voluptates.
-                        </p><br>
-                        <h3>$1000</h3><br>
+                        </p>
+                        <br />
+                        <h3 class="textMode" >$1000</h3>
+                        <br />
                         <button>Read more</button>
                     </div>
                 </div>
             </div>
-            <div class="part2 row">
+            <div class="part2 row" id="part2">
                 <div class="part2-left col-6">
-                    <h2>How <span style="font-size: 50px">find us</span></h2>
+                    <h2  class="textMode" >How <span style="font-size: 50px">find us</span></h2>
                     <div class="address">
-                        
-                        <h3><i class="fa-solid fa-map-location-dot"></i>  Address</h3>
-                        <p class="add">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3><i class="fa-solid fa-map-location-dot"></i> Address</h3>
+                        <p class="add textMode">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
                     </div>
                     <div class="call">
-                        
-                        <h3><i class="fa-solid fa-phone"></i>  call us</h3>
-                        <p>+123 4567 8900</p>
-                        <p>+123 4567 8900</p>
+                        <h3><i class="fa-solid fa-phone"></i> call us</h3>
+                        <p class="textMode">+123 4567 8900</p>
+                        <p class="textMode">+123 4567 8900</p>
                     </div>
                     <div class="email">
-                        
-                        <h3><i class="fa-solid fa-envelope"></i>  email</h3>
-                        <p>free@paskj.com</p>
+                        <h3><i class="fa-solid fa-envelope"></i> email</h3>
+                        <p class="textMode">free@paskj.com</p>
                     </div>
                     <div class="website">
-                        
-                        <h3><i class="fa-solid fa-desktop"></i>  website</h3>
-                        <p>www.paskj.com</p>
+                        <h3><i class="fa-solid fa-desktop"></i> website</h3>
+                        <p class="textMode">www.paskj.com</p>
                     </div>
                 </div>
                 <div class="part2-right col-6">
                     <img src="./images/Image-footer.png" />
                 </div>
             </div>
-            <div class="part3 col-12">
-                <p class="footer">copyright @copyright 2023. Design by desha</p>
+            <div class="part3 col-12 boxes">
+                <p class="footer textMode">copyright @copyright 2023. Design by desha</p>
             </div>
         </div>
+        <script src="main.js"></script>
     </body>
 </html>

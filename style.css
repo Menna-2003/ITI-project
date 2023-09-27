@@ -3,6 +3,37 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --main-color: #d25b38;
+    --transparent-color: #e69e97;
+    --transparent-color2: rgba(210, 91, 56, 50%);
+    --text-color: #454443;
+    --ourSpecialService-background-color: #f4f2f2;
+    --Bebas-Neue: "Bebas Neue", sans-serif;
+    --Open-Sans: "Open Sans", sans-serif;
+}
+#color-mode {
+    position: fixed;
+    right: 0;
+    top: 20px;
+    display: grid;
+    background-color: #d25b38;
+    padding: 6px;
+    gap: 5px;
+    z-index: 10;
+}
+#dark {
+    text-align: center;
+}
+#light {
+    text-align: center;
+}
+#dark i,
+#light i {
+    font-size: 25px;
+}
+
 .five .part1 {
     background-color: #f4f2f2;
     width: 100%;
@@ -103,6 +134,7 @@
 .five .part2-left {
     width: 40%;
     height: 100%;
+    padding: 10px 0 0 20px;
 }
 .five .part2 .part2-right {
     height: 100%;
@@ -115,12 +147,12 @@
 .five .part2-right img {
     max-width: 744px;
 }
-@media (max-width:670px) {
+@media (max-width: 670px) {
     .five .part2 {
         display: grid;
         justify-items: center;
     }
-    .five .part2-left{
+    .five .part2-left {
         width: 100%;
     }
     .five .part2 .part2-right {
