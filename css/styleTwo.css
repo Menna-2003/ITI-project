@@ -58,7 +58,7 @@
     width: 200px;
     /* color: var(--text-color); */
     font-family: var(--Bebas-Neue);
-    font-size: 55px;
+    font-size: 70px;
     letter-spacing: 1px;
     font-weight: 500;
 }
@@ -67,6 +67,7 @@
 }
 .two .container .text p {
     line-height: 1.2;
+    word-spacing: 4.5px;
     /* color: var(--text-color); */
 }
 .two .container .box {
@@ -130,7 +131,7 @@
     width: 400px;
     /* color: var(--text-color); */
     transition: 0.4s;
-    word-spacing: 1.5px;
+    word-spacing: 4.5px;
 }
 .two i {
     padding: 5px;
