@@ -26,6 +26,7 @@ body {
     background-color: #d25b38;
     padding: 6px;
     gap: 5px;
+    z-index: 1000;
 }
 #dark {
     text-align: center;
@@ -443,7 +444,7 @@ body {
     overflow-x: hidden;
     width: 100%;
     height: fit-content;
-    min-height: 90vb;
+    min-height: 76vb;
     overflow: hidden;
     position: relative;
 }
@@ -451,8 +452,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 0 0 25px 0;
+    /* margin: 0 0 25px 0; */
+    margin: 0;
+    padding: 45px;
     justify-content: space-around;
+    /* background-color: #f4f2f2; */
 }
 .container-yara-one .text {
     font-size: 65px;
@@ -519,6 +523,7 @@ body {
     .container-yara-one .clearfix {
         justify-items: center;
     }
+
 }
 
 .container-yara-two .grid {
@@ -535,7 +540,7 @@ body {
     grid-row: 1;
     width: 95%;
     height: auto;
-    margin: 175px auto 0;
+    margin: 45px auto 0;
     font-size: 65px;
     text-transform: uppercase;
     text-align: center;
@@ -588,6 +593,7 @@ body {
         height: 100%;
     }
 }
+
 /* End yara */
 /* Start Mostafa */
 
