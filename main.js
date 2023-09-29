@@ -1,6 +1,6 @@
 //        **************           Start Dark mode      **************
 // Your array of colors
-var colors = ["#fff", "#000", "#303030", "#f4f2f2", "#454443", "#1d1d1d"];  //#1d1d1d
+var colors = ["#fff", "#000", "#303030", "#f4f2f2", "#454443", "#1d1d1d"]; //#1d1d1d
 
 // Convert the array to a JSON string
 var colorsJSON = JSON.stringify(colors);
@@ -19,7 +19,7 @@ if (storedColorsJSON) {
     var WhiteColor = storedColors[0];
     var blackColor = storedColors[1];
     var boxesColor = storedColors[2];
-    var diffrentSectionLightColor = storedColors[3];  // diffrent from white section
+    var diffrentSectionLightColor = storedColors[3]; // diffrent from white section
     var textDarkColor = storedColors[4];
     var diffrentSectionDarkColor = storedColors[5]; // diffrent from black section
 } else {
@@ -141,3 +141,14 @@ window.addEventListener("scroll", () => {
 });
 
 //        **************           End animation on scroll      **************
+
+let bar = document.getElementById("bar");
+let nav = document.getElementById("nav");
+
+bar.addEventListener("click", () => {
+    if (nav.classList.contains("show")) {
+        nav.classList.remove("show");
+    } else {
+        nav.classList.add("show");
+    }
+});

@@ -94,6 +94,41 @@ body {
     border-bottom: 1.5px solid var(--main-color);
 }
 
+@media (min-width: 830px) {
+    .container-mennah i {
+        display: none;
+    }
+}
+@media (max-width: 830px) {
+    .container-mennah nav ul {
+        display: none;
+    }
+    .container-mennah i {
+        position: absolute;
+        right: 70px;
+        top: 38px;
+        font-size: 25px;
+    }
+    .container-mennah .logo {
+        width: 30%;
+        position: absolute;
+        left: 18px;
+        top: 13px;
+    }
+    .container-mennah .show{
+        width: 100%;
+    }
+    .container-mennah .show ul{
+        z-index: 1000;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        margin-top: 86px;
+        align-items: center;
+        background-color: #a9a9a9;
+    }
+}
+
 .container-mennah .container {
     /* font-size: 50px; */
     position: absolute;
@@ -143,6 +178,13 @@ body {
 .container-mennah .button2 {
     background-color: transparent;
     border: 5px solid white;
+}
+
+@media (max-width:400px) {
+    .container-mennah button{
+        padding: 15px 0 ;
+        font-size: 20px;
+    }
 }
 
 /* End Menna Mostafa */
@@ -523,7 +565,6 @@ body {
     .container-yara-one .clearfix {
         justify-items: center;
     }
-
 }
 
 .container-yara-two .grid {
