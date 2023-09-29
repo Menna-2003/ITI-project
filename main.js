@@ -45,10 +45,66 @@ let part1 = document.getElementById("part1");
 let part2 = document.getElementById("part2");
 
 if (window.localStorage.getItem("color")) {
-    sectionTwo.style.backgroundColor = WhiteColor;
-    threeSection.style.backgroundColor = diffrentSectionLightColor;
-    three2Section.style.backgroundColor = WhiteColor;
-    darkMode.classList.remove("active");
+    if (window.localStorage.getItem("color") === "white") {
+        sectionTwo.style.backgroundColor = WhiteColor;
+        threeSection.style.backgroundColor = diffrentSectionLightColor;
+        three2Section.style.backgroundColor = WhiteColor;
+        body.style.backgroundColor = WhiteColor;
+        part1.style.backgroundColor = diffrentSectionLightColor;
+        part2.style.backgroundColor = WhiteColor;
+
+        for (let i = 0; i < textMode.length; i++) {
+            textMode[i].style.color = blackColor;
+        }
+        for (let i = 0; i < box1.length; i++) {
+            box1[i].style.backgroundColor = WhiteColor;
+        }
+
+        containerYara[0].style.backgroundColor = diffrentSectionLightColor;
+        containerYara2[0].style.color = WhiteColor;
+
+        for (let i = 0; i < boxes.length; i++) {
+            boxes[i].style.backgroundColor = WhiteColor;
+        }
+        for (let i = 0; i < darkModetext.length; i++) {
+            darkModetext[i].style.color = "#000";
+        }
+        for (let i = 0; i < icons.length; i++) {
+            icons[i].style.backgroundColor = "#fff";
+            icons[i].style.color = "#000";
+        }
+    } else {
+        sectionTwo.style.backgroundColor = blackColor;
+        threeSection.style.backgroundColor = diffrentSectionDarkColor;
+        three2Section.style.backgroundColor = blackColor;
+        body.style.backgroundColor = blackColor;
+        part1.style.backgroundColor = diffrentSectionDarkColor;
+        part2.style.backgroundColor = blackColor;
+
+        containerYara[0].style.color = diffrentSectionDarkColor;
+        containerYara[0].style.backgroundColor = diffrentSectionDarkColor;
+        containerYara2[0].style.color = blackColor;
+
+        for (let i = 0; i < textMode.length; i++) {
+            textMode[i].style.color = WhiteColor;
+        }
+        for (let i = 0; i < box1.length; i++) {
+            box1[i].style.backgroundColor = boxesColor;
+        }
+        for (let i = 0; i < boxes.length; i++) {
+            boxes[i].style.backgroundColor = boxesColor;
+        }
+        for (let i = 0; i < darkModetext.length; i++) {
+            darkModetext[i].style.color = "#fff";
+        }
+        for (let i = 0; i < icons.length; i++) {
+            icons[i].style.backgroundColor = "#fff";
+            icons[i].style.color = "#000";
+            icons[i].style.borderColor = "#d25b38";
+        }
+    }
+
+    // darkMode.classList.remove("active");
 }
 
 darkMode.addEventListener("click", (e) => {
@@ -61,8 +117,6 @@ darkMode.addEventListener("click", (e) => {
     body.style.backgroundColor = e.currentTarget.dataset.color;
     part1.style.backgroundColor = diffrentSectionDarkColor;
     part2.style.backgroundColor = blackColor;
-
-    // body[0].style.backgroundColor = e.currentTarget.dataset.color;
 
     containerYara[0].style.color = diffrentSectionDarkColor;
     containerYara[0].style.backgroundColor = diffrentSectionDarkColor;
@@ -96,8 +150,6 @@ LightMode.addEventListener("click", (e) => {
     part1.style.backgroundColor = diffrentSectionLightColor;
     part2.style.backgroundColor = e.currentTarget.dataset.color;
 
-    body[0].style.backgroundColor = e.currentTarget.dataset.color;
-
     for (let i = 0; i < textMode.length; i++) {
         textMode[i].style.color = blackColor;
     }
@@ -105,7 +157,7 @@ LightMode.addEventListener("click", (e) => {
         box1[i].style.backgroundColor = WhiteColor;
     }
 
-    containerYara[0].style.color = diffrentSectionLightColor;
+    containerYara[0].style.backgroundColor = diffrentSectionLightColor;
     containerYara2[0].style.color = WhiteColor;
 
     for (let i = 0; i < boxes.length; i++) {
