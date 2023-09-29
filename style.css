@@ -1,0 +1,767 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #d25b38;
+    --transparent-color: rgba(230, 158, 151);
+    --transparent-color2: rgba(210, 91, 56, 50%);
+    --text-color: #454443;
+    --ourSpecialService-background-color: #f4f2f2;
+    --Bebas-Neue: "Bebas Neue", sans-serif;
+    --Open-Sans: "Open Sans", sans-serif;
+}
+
+body {
+    font-family: var(--Bebas-Neue);
+}
+
+#colorMode {
+    position: fixed;
+    right: 0;
+    top: 20px;
+    display: grid;
+    background-color: #d25b38;
+    padding: 6px;
+    gap: 5px;
+}
+#dark {
+    text-align: center;
+}
+#light {
+    text-align: center;
+}
+#dark i,
+#light i {
+    font-size: 25px;
+}
+
+/* Start Menna Mostafa */
+
+.container-mennah {
+    background-image: url(images/bg.png);
+    background-size: cover;
+    min-height: 100vb;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container-mennah header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 95%;
+    margin: auto;
+    padding: 10px 0;
+    /* font-family: var(--Bebas-Neue); */
+}
+
+.container-mennah .logo {
+    /* margin-left: 100px; */
+    /* text-align: right; */
+    width: 30%;
+}
+
+.container-mennah .logo img {
+    width: 200px;
+}
+
+.container-mennah nav ul {
+    display: flex;
+    gap: 15px;
+    list-style: none;
+    /* margin: 0 10px; */
+}
+
+/* nav ul li:last-child {
+    margin-right: 170px;
+} */
+
+.container-mennah nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+
+.container-mennah nav ul li a:hover {
+    /* text-decoration: underline; */
+    color: var(--main-color);
+    border-bottom: 1.5px solid var(--main-color);
+}
+
+.container-mennah .container {
+    /* font-size: 50px; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    height: fit-content;
+}
+
+.container-mennah .container span {
+    color: #e64f22;
+}
+.container-mennah .container h1 {
+    font-size: 60px;
+    margin: 150px 0 50px;
+    color: white;
+}
+.container-mennah .container p {
+    color: white;
+    font-style: italic;
+    /* margin-left: 70px;
+    margin-bottom: 0; */
+}
+.container-mennah .button-container {
+    display: flex;
+    gap: 15px;
+    margin: 40px 0;
+    /* margin-left: 70px; */
+    /* margin-top: 60px; */
+}
+.container-mennah button {
+    padding: 15px 50px;
+    /* margin-right: 50px; */
+    font-size: 16px;
+    font-family: var(--Bebas-Neue);
+    cursor: pointer;
+    color: white;
+    width: 180px;
+}
+
+.container-mennah .button1 {
+    background-color: #e64f22;
+    border: none;
+    /* margin-right: 15px; */
+}
+.container-mennah .button2 {
+    background-color: transparent;
+    border: 5px solid white;
+}
+
+/* End Menna Mostafa */
+
+/* Start Menna Mohamed */
+
+.two {
+    /* margin-top: 100vb; */
+    width: 100%;
+    height: 90vb;
+}
+.two .container {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    overflow: hidden;
+}
+.two .container .text {
+    width: 255px;
+}
+.two .container .text h1 {
+    text-transform: uppercase;
+    margin: 35px 0;
+    width: 200px;
+    /* color: var(--text-color); */
+    font-family: var(--Bebas-Neue);
+    font-size: 70px;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+.two .container .text h1 span.s {
+    color: var(--main-color);
+}
+.two .container .text p {
+    line-height: 1.2;
+    word-spacing: 4.5px;
+    /* color: var(--text-color); */
+}
+.two .container .box {
+    width: 700px;
+    height: 100%;
+    display: grid;
+    align-content: center;
+    gap: 35px;
+    position: relative;
+}
+.two .container .box img {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}
+.two .container .box .overlay {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(255 58 0 / 71%);
+}
+.two .container .box .fixed h2 {
+    font-weight: 400;
+    font-size: 30px;
+}
+.two .container .box .fixed p {
+    font-weight: 300;
+    font-size: 18px;
+}
+.two .container .box .section {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    height: 100px;
+}
+.two .container .box .section .fixed {
+    width: 50%;
+    color: #fff;
+    display: grid;
+    justify-items: end;
+    padding: 0 30px 0 0;
+    text-transform: uppercase;
+    position: relative;
+    font-family: var(--Bebas-Neue);
+}
+.two .container .box .section-one .fixed::after,
+.two .container .box .section-two .fixed::after,
+.two .container .box .section-three .fixed::after {
+    content: "";
+    width: 85%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+}
+.two .container .box .section .hidden {
+    position: absolute;
+    left: 58%;
+    width: 400px;
+    /* color: var(--text-color); */
+    transition: 0.4s;
+    word-spacing: 4.5px;
+}
+.two i {
+    padding: 5px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%) rotateY(180deg);
+    border: 7px solid var(--main-color);
+    border-radius: 50%;
+    background-color: #fff;
+    /* color: var(--text-color); */
+}
+.animationText {
+    transform: translateX(400%);
+    transition: all 0.5s ease-in-out;
+}
+.animationText.show {
+    transform: translateX(0);
+}
+
+@media (max-width: 800px) {
+    .two .container .box {
+        display: none;
+    }
+    .two .container .text {
+        margin-top: 50px;
+        width: 84%;
+    }
+}
+
+/* Start Menna Mohamed */
+
+/* Start Mahmoud */
+
+.three {
+    padding: 10px 30px;
+    height: fit-content;
+    min-height: 90vb;
+    width: 100%;
+    background-color: #f4f2f2;
+    font-family: "raklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+.three h1 {
+    width: 35%;
+    text-align: center;
+    font-size: 50px;
+    margin: 0 0 20px;
+}
+.three .divclass {
+    width: 65%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, auto);
+    grid-template-rows: repeat(2, auto);
+}
+.three h3 {
+    color: red;
+    text-align: center;
+}
+.three .divclass .box {
+    background-color: white;
+    max-width: 200px;
+    height: 250px;
+    max-height: 250px;
+    /* border: 1px solid white; */
+    text-align: center;
+    display: grid;
+    align-items: center;
+}
+.three .divclass .box i {
+    font-size: 45px;
+}
+@media (max-width: 1000px) {
+    .three .divclass {
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(3, auto);
+    }
+    .three .divclass .box {
+        height: 200px;
+    }
+}
+@media (max-width: 680px) {
+    .three {
+        display: grid;
+        justify-content: center;
+        justify-items: center;
+    }
+    .three .divclass {
+        width: 100%;
+    }
+    .three h1 {
+        width: 100%;
+    }
+}
+@media (max-width: 450px) {
+    .three .divclass {
+        grid-template-columns: repeat(2, 177px);
+        grid-template-rows: repeat(3, 230px);
+    }
+}
+
+.three2 {
+    padding: 10px 30px;
+    margin: 60px 0;
+    height: fit-content;
+    min-height: 90vb;
+    width: 100%;
+    background-color: #ffffff;
+    font-family: "raklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* overflow: hidden; */
+}
+.three2 h1 {
+    width: 35%;
+    text-align: center;
+    font-size: 50px;
+    margin: 0 0 20px;
+}
+.three2 .divthree2 {
+    width: 65%;
+    display: flex;
+    gap: 10px;
+    height: 100%;
+}
+.three2 .divthree2 .m1,
+.three2 .divthree2 .m2,
+.three2 .divthree2 .box2.mm {
+    height: 100%;
+}
+.three2 .m1 {
+    display: grid;
+    gap: 18px;
+}
+.three2 .m2 {
+    display: grid;
+    max-width: 300px;
+}
+.three2 .m2 .box2 {
+    height: fit-content;
+    min-height: 200px;
+}
+.three2 .m2 h2 {
+    width: 100%;
+    text-align: start;
+}
+.three2 .box2.mm {
+    position: relative;
+    width: fit-content;
+    margin: auto;
+}
+.three2 .box2.mm .text {
+    position: absolute;
+    bottom: 40px;
+    color: #fff;
+    width: 90%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+@media (max-width: 1150px) {
+    .three2 {
+        display: grid;
+        justify-items: center;
+    }
+    .three2 h1 {
+        width: 100%;
+    }
+    .three2 .divthree2 {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 770px) {
+    .three2 .divthree2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 1fr);
+    }
+    .three2 .m1 {
+        justify-items: center;
+    }
+    .three2 .m2 .box2 {
+        min-height: 140px;
+    }
+}
+
+/* End Mahmoud */
+
+/* Start yara */
+
+.container-yara {
+    overflow-x: hidden;
+    width: 100%;
+    height: fit-content;
+    min-height: 90vb;
+    overflow: hidden;
+    position: relative;
+}
+.container-yara-one {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 25px 0;
+    justify-content: space-around;
+}
+.container-yara-one .text {
+    font-size: 65px;
+    width: 30%;
+    text-transform: uppercase;
+}
+.container-yara-one .text span {
+    display: block;
+}
+.container-yara-one .clearfix {
+    display: flex;
+    gap: 20px;
+}
+.container-yara-one .clearfix .new {
+    width: 200px;
+    display: grid;
+    border: 0.2px solid #ccc;
+}
+.container-yara-one .clearfix .new img {
+    width: 100%;
+}
+.container-yara-one .top {
+    text-align: center;
+    margin-top: 20px;
+}
+.container-yara-one .top h3 {
+    font-size: 40px;
+}
+.container-yara-one .top h5 {
+    font-size: 21px;
+    margin-top: 10px;
+}
+.container-yara-one .text2 {
+    margin: 20px;
+    text-align: center;
+}
+@media (max-width: 960px) {
+    .container-yara-one {
+        display: grid;
+        justify-content: inherit;
+    }
+    .container-yara-one .text {
+        width: 100%;
+        margin: 25px auto;
+        text-align: center;
+    }
+    .container-yara-one .text span {
+        display: block;
+    }
+    .container-yara-one .clearfix {
+        margin: 0 auto;
+        width: 74%;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    .container-yara-one .new {
+        width: 200px;
+        display: grid;
+        border: 0.2px solid #ccc;
+    }
+}
+@media (max-width: 580px) {
+    .container-yara-one .clearfix {
+        justify-items: center;
+    }
+}
+
+.container-yara-two .grid {
+    width: 90%;
+    display: grid;
+    margin: auto;
+    gap: 10px;
+}
+.container-yara-two .grid img {
+    width: 100%;
+    height: 100%;
+}
+.container-yara-two .grid .text {
+    grid-row: 1;
+    width: 95%;
+    height: auto;
+    margin: 175px auto 0;
+    font-size: 65px;
+    text-transform: uppercase;
+    text-align: center;
+}
+@media (min-width: 800px) {
+    .container-yara-two .grid {
+        display: grid;
+        width: 100%;
+        gap: 0;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 180px);
+        justify-items: center;
+    }
+    .container-yara-two .grid img:first-child {
+        grid-column: 1 / 3;
+        width: 100%;
+        height: 100%;
+    }
+    .container-yara-two .grid img:nth-child(2) {
+        grid-column: 3 / 5;
+        width: 100%;
+        height: 100%;
+    }
+    .container-yara-two .grid img:nth-child(3) {
+        grid-row: 2 / -1;
+        width: 100%;
+        height: 100%;
+    }
+    .container-yara-two .grid .text {
+        grid-row: 2 / -1;
+        width: 90%;
+        height: auto;
+        margin: 175px auto 0;
+        font-size: 50px;
+        text-transform: uppercase;
+        text-align: start;
+    }
+    .container-yara-two .grid img:nth-child(5) {
+        width: 100%;
+        height: 100%;
+    }
+    .container-yara-two .grid img:nth-child(6) {
+        grid-row: 2 / -1;
+        grid-column: 4;
+        width: 100%;
+        height: 100%;
+    }
+    .container-yara-two .grid img:nth-child(7) {
+        width: 100%;
+        height: 100%;
+    }
+}
+/* End yara */
+/* Start Mostafa */
+
+.five .part1 {
+    background-color: #f4f2f2;
+    width: 100%;
+    height: fit-content;
+    min-height: 90vb;
+    /* margin: 0 auto 20px; */
+    display: flex;
+    padding: 25px 15px;
+    align-items: center;
+}
+.five .part1 h2 {
+    /* position: relative;
+    top: 160px;
+    left: 50px; */
+    font-size: 50px;
+    color: #454443;
+    text-transform: uppercase;
+    width: 35%;
+    padding: 20px 0 0 100px;
+}
+.five .part1 .packs {
+    width: 65%;
+    display: flex;
+    gap: 20px;
+}
+.five .part1 .packs i {
+    font-size: 35px;
+    margin: 15px;
+}
+.five .part1 span:first-child {
+    font-size: 60px;
+}
+.five .part1 span {
+    display: block;
+    color: #d25b38;
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 5px;
+}
+.five .part1 h3 {
+    font-size: 25px;
+    color: #454443;
+    text-transform: uppercase;
+    margin: 8px;
+}
+.five .part1 .pac1,
+.five .part1 .pac2,
+.five .part1 .pac3 {
+    display: inline-block;
+    background-color: white;
+    padding: 10px 5px 20px;
+    width: 250px;
+    text-align: center;
+}
+.five .part1 button {
+    background-color: #d25b38;
+    border: 2px solid #d25b38;
+    border-radius: 5px;
+    width: 140px;
+    height: 30px;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+}
+
+@media (max-width: 1140px) {
+    .five .part1 {
+        display: grid;
+        justify-content: center;
+    }
+    .five .part1 .packs,
+    .five .part1 h2 {
+        width: 100%;
+        padding: 0 0 25px 0;
+        text-align: center;
+    }
+}
+@media (max-width: 820px) {
+    .five .part1 .packs {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 245px);
+    }
+}
+@media (max-width: 520px) {
+    .five .part1 .packs {
+        justify-content: center;
+        grid-template-columns: repeat(1, 245px);
+    }
+}
+
+.five .part2 {
+    background-color: white;
+    width: 100%;
+    height: auto;
+    min-height: 80vb;
+    display: flex;
+}
+.five .part2-left {
+    width: 40%;
+    height: 100%;
+    padding: 10px 0 0 20px;
+}
+.five .part2 .part2-right {
+    height: 100%;
+    width: 60%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: flex-end;
+}
+.five .part2-right img {
+    max-width: 744px;
+}
+@media (max-width: 670px) {
+    .five .part2 {
+        display: grid;
+        justify-items: center;
+    }
+    .five .part2-left {
+        width: 100%;
+    }
+    .five .part2 .part2-right {
+        width: 100%;
+        justify-content: center;
+    }
+    .five .part2-right img {
+        max-width: 90%;
+    }
+}
+.five .part2 .part2-left .address,
+.five .part2 .part2-left .call,
+.five .part2 .part2-left .email,
+.five .part2 .part2-left .website {
+    padding: 5px;
+    margin: 20px;
+    font-size: 20px;
+}
+.five .part2 .part2-left h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    padding: 15px 30px;
+    color: #454443;
+}
+.five .part2 .part2-left h3 {
+    color: #d25b38;
+    text-transform: uppercase;
+}
+.five .part2-left p {
+    padding: 5px;
+    margin: 3px;
+    font-size: 18px;
+}
+
+.five .part2-left span {
+    display: block;
+    color: #d25b38;
+    text-transform: uppercase;
+}
+
+.five .part3 {
+    background-color: #f4f2f2;
+    text-align: center;
+    width: 100%;
+    height: 50px;
+    margin: auto;
+}
+.five .part3 p {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 15px;
+}
+
+/* End Mostafa */
