@@ -1,18 +1,17 @@
+
 body {
     background-image: url("bg.png");
-    margin: 0; 
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 header {
-  
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     padding: 10px 0;
     font-family: 'Bebas Neue', sans-serif;
-    
-
 }
 
 nav {
@@ -32,64 +31,58 @@ nav ul li:last-child {
 
 nav ul li a {
     text-decoration: none;
-    color: white 
+    color: white;
 }
 
-
 nav ul li a:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
 }
 
 .logo {
     margin-left: 100px;
 }
-.container{
+
+.container {
     font-size: 50px;
     font-family: 'Bebas Neue', sans-serif;
-
 }
 
-span{
-    color:#e64f22;
+span {
+    color: #e64f22;
+}
 
+h1 {
+    margin: 70px;
+    color: white;
+    font-size: 50px;
 }
-h1{
-    margin:70px ;
-    margin-bottom: 5px;
-    color:white;
-}
-p{
-    color:white;
-    font-style:italic;
+
+p {
+    color: white;
+    font-style: italic;
     margin-left: 70px;
-    margin-bottom:0 ;
+    margin-bottom: 0;
    
+
 }
-.button-container{
-    display:flex ;
-      margin-left: 70px;
-      margin-top: 60px;
-      
+
+.button-container {
+    display: flex;
+    margin-left: 70px;
+    margin-top: 60px;
 }
-button{
-    padding: 15px 50px; 
-    margin-right: 50px; 
-    font-size: 16px; 
-    font-family:'Bebas Neue', sans-serif;
+
+button {
+    padding: 15px 50px;
+    margin-right: 50px;
+    font-size: 16px;
     cursor: pointer;
-    color:white; 
+    color: white;
+    background-color: transparent;
+    border: 5px solid white;
 }
 
 .button1 {
-   background-color: #e64f22;
-   border: none;
-   margin-right: 15px;
- 
- 
+    background-color: #e64f22;
+    border: none;
 }
-.button2{
-    background-color:transparent ;
-    border: 5px solid white; 
-
-}
-
