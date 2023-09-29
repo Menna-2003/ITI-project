@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #d25b38;
+    --transparent-color: rgba(230, 158, 151);
+    --transparent-color2: rgba(210, 91, 56, 50%);
+    --text-color: #454443;
+    --ourSpecialService-background-color: #f4f2f2;
+    --Bebas-Neue: "Bebas Neue", sans-serif;
+    --Open-Sans: "Open Sans", sans-serif;
+}
