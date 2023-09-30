@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
-
+html {
+    scroll-behavior: smooth;
+}
 :root {
     --main-color: #d25b38;
     --transparent-color: rgba(230, 158, 151);
@@ -23,7 +25,7 @@ body {
     right: 0;
     top: 20px;
     display: grid;
-    background-color: #d25b38;
+    background-color: var(--main-color);
     padding: 6px;
     gap: 5px;
     z-index: 1000;
@@ -86,6 +88,7 @@ body {
     color: white;
     font-size: 20px;
     padding-bottom: 5px;
+    transition: 0.3s;
 }
 
 .container-mennah nav ul li a:hover {
@@ -115,10 +118,10 @@ body {
         left: 18px;
         top: 13px;
     }
-    .container-mennah .show{
+    .container-mennah .show {
         width: 100%;
     }
-    .container-mennah .show ul{
+    .container-mennah .show ul {
         z-index: 1000;
         position: relative;
         display: flex;
@@ -163,7 +166,7 @@ body {
 .container-mennah button {
     padding: 15px 50px;
     /* margin-right: 50px; */
-    font-size: 16px;
+    font-size: 17px;
     font-family: var(--Bebas-Neue);
     cursor: pointer;
     color: white;
@@ -178,11 +181,14 @@ body {
 .container-mennah .button2 {
     background-color: transparent;
     border: 5px solid white;
+    transition: 0.3s;
 }
-
-@media (max-width:400px) {
-    .container-mennah button{
-        padding: 15px 0 ;
+.container-mennah .button2:hover{
+    background-color: var(--main-color);
+}
+@media (max-width: 400px) {
+    .container-mennah button {
+        padding: 15px 0;
         font-size: 20px;
     }
 }
@@ -672,10 +678,10 @@ body {
 }
 .five .part1 span {
     display: block;
-    color: #d25b38;
+    color: var(--main-color);
     font-size: 20px;
     text-transform: uppercase;
-    margin: 5px;
+    /* margin: 5px; */
 }
 .five .part1 h3 {
     font-size: 25px;
@@ -693,8 +699,8 @@ body {
     text-align: center;
 }
 .five .part1 button {
-    background-color: #d25b38;
-    border: 2px solid #d25b38;
+    background-color: var(--main-color);
+    border: 2px solid var(--main-color);
     border-radius: 5px;
     width: 140px;
     height: 30px;
@@ -782,7 +788,7 @@ body {
     color: #454443;
 }
 .five .part2 .part2-left h3 {
-    color: #d25b38;
+    color: var(--main-color);
     text-transform: uppercase;
 }
 .five .part2-left p {
@@ -793,7 +799,7 @@ body {
 
 .five .part2-left span {
     display: block;
-    color: #d25b38;
+    color: var(--main-color);
     text-transform: uppercase;
 }
 
