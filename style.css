@@ -8,8 +8,6 @@ html {
 }
 :root {
     --main-color: #d25b38;
-    --transparent-color: rgba(230, 158, 151);
-    --transparent-color2: rgba(210, 91, 56, 50%);
     --text-color: #454443;
     --ourSpecialService-background-color: #f4f2f2;
     --Bebas-Neue: "Bebas Neue", sans-serif;
@@ -23,12 +21,14 @@ body {
 #colorMode {
     position: fixed;
     right: 0;
-    top: 20px;
+    top: 100px;
     display: grid;
     background-color: var(--main-color);
     padding: 6px;
     gap: 5px;
     z-index: 1000;
+    border-radius: 15px;
+    border: 3px solid var(--text-color);
 }
 #dark {
     text-align: center;
@@ -39,6 +39,27 @@ body {
 #dark i,
 #light i {
     font-size: 25px;
+}
+
+.textAnimationUP{
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.4s ease-in-out;
+}
+
+.textAnimationUPShow{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.BoxAnimation{
+    transform: translateX(10px);
+    opacity: 0;
+    transition: all 0.4s ease-in-out;
+}
+.BoxAnimationShow{
+    transform: translateX(0);
+    opacity: 1;
 }
 
 /* Start Menna Mostafa */
@@ -170,9 +191,12 @@ body {
     font-family: var(--Bebas-Neue);
     cursor: pointer;
     color: white;
+    transition: 0.3s;
     width: 180px;
 }
-
+.container-mennah button:hover{
+    border-radius: 20px;
+}
 .container-mennah .button1 {
     background-color: #e64f22;
     border: none;
@@ -181,7 +205,6 @@ body {
 .container-mennah .button2 {
     background-color: transparent;
     border: 5px solid white;
-    transition: 0.3s;
 }
 .container-mennah .button2:hover{
     background-color: var(--main-color);
@@ -510,6 +533,7 @@ body {
     font-size: 65px;
     width: 30%;
     text-transform: uppercase;
+    text-align: center;
 }
 .container-yara-one .text span {
     display: block;
@@ -663,6 +687,7 @@ body {
     text-transform: uppercase;
     width: 35%;
     padding: 20px 0 0 100px;
+    text-align: center;
 }
 .five .part1 .packs {
     width: 65%;

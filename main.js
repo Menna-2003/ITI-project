@@ -177,6 +177,8 @@ LightMode.addEventListener("click", (e) => {
 //        **************           Start animation on scroll      **************
 
 let texts = document.querySelectorAll(".animationText");
+let textAnimationUP = document.querySelectorAll(".textAnimationUP");
+let BoxAnimation = document.querySelectorAll(".BoxAnimation");
 
 window.addEventListener("scroll", () => {
     let triggerBottom = (window.innerHeight / 5) * 4;
@@ -188,6 +190,24 @@ window.addEventListener("scroll", () => {
             text.classList.add("show");
         } else {
             text.classList.remove("show");
+        }
+    });
+
+    textAnimationUP.forEach((e) => {
+        let textAnimationTop = e.getBoundingClientRect().top;
+        if (textAnimationTop < triggerBottom) {
+            e.classList.add("textAnimationUPShow");
+        } else {
+            e.classList.remove("textAnimationUPShow");
+        }
+    });
+
+    BoxAnimation.forEach((ele) => {
+        let BoxAnimationTop = ele.getBoundingClientRect().top;
+        if (BoxAnimationTop < triggerBottom) {
+            ele.classList.add("BoxAnimationShow");
+        } else {
+            ele.classList.remove("BoxAnimationShow");
         }
     });
 });
