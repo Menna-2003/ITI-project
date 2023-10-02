@@ -1,6 +1,6 @@
 //        **************           Start Dark mode      **************
 // Your array of colors
-var colors = ["#fff", "#000", "#303030", "#f4f2f2", "#454443", "#1d1d1d"]; //#1d1d1d
+var colors = ["#fff", "#000", "#303030", "#f4f2f2", "#454443", "#1d1d1d"]; 
 
 // Convert the array to a JSON string
 var colorsJSON = JSON.stringify(colors);
