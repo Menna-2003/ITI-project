@@ -1,0 +1,26 @@
+{
+  "name": "ITI-project",
+  "version": "1.0.0",
+  "description": "Website for Agency                                   \r   using HtMl, CSS, JavaScript, Responsive Web Design and React js\r professional agency website as a CV supplement with key sections like Home, About Us, Services, Portfolio, Our team, Contact information, News, and valuable resources, maintaining mobile responsiveness",
+  "main": "main.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gh-pages": "^6.2.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Menna-2003/ITI-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Menna-2003/ITI-project/issues"
+  },
+  "homepage": "https://your-username.github.io/ITI-PROJECT"
+}
