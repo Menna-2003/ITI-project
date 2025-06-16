@@ -16,5 +16,5 @@ Resources: Valuable content for visitors, such as guides, tools, or downloadable
 Installation
 Clone the repository:
 
-git clone <repository-url>
+git clone <https://github.com/Menna-2003/ITI-project.git>
 
