@@ -66,6 +66,3 @@ agency-website/
 
 ## License
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Contact
-For questions or feedback, reach out via the contact form on the website or email [your-email@example.com](mailto:your-email@example.com).
