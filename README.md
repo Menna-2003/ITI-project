@@ -19,13 +19,8 @@ This is a professional agency website designed as a CV supplement to showcase mo
 1. Clone the repository:
    ```bash
    git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd agency-website
-   ```
-   ```
-4. Run the development server:
+  
+2. Run the development server:
    ```bash
    npm start
    ```
