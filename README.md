@@ -1,4 +1,4 @@
-Agency WebsitE
+Agency Website
 This is a professional agency website designed as a CV supplement to showcase modern web development skills. The website features a responsive design, ensuring optimal performance and usability across all devices. It includes key sections to demonstrate a comprehensive understanding of frontend development.
 
 Features
