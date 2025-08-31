@@ -1,68 +1,70 @@
-# Agency Website
+# Getting Started with Create React App
 
-## Overview
-This is a professional agency website designed as a CV supplement to showcase modern web development skills. The website features a responsive design, ensuring optimal performance and usability across all devices. It includes key sections to demonstrate a comprehensive understanding of frontend development.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Features
-- **Modern, Responsive Design**: Optimized for seamless performance on desktops, tablets, and mobile devices.
-- **Key Agency Sections**:
-  - **Home**: Engaging hero section with a clear call-to-action to attract visitors.
-  - **About Us**: Highlights the agency’s story, mission, and core values.
-  - **Services**: Detailed overview of service offerings with a focus on expertise.
-  - **Portfolio**: Showcase of work samples to demonstrate project capabilities.
-  - **Our Team**: Profiles of team members, highlighting their expertise and roles.
-  - **Contact Information**: User-friendly contact form and essential contact details.
-  - **News/Blog**: Section for the latest updates, articles, and insights.
-  - **Resources**: Valuable content for visitors, such as guides, tools, or downloadable assets.
+## Available Scripts
 
-## Installation
-1. Clone the repository:
-   ```bash
-   git clone <repository-url>
-  
-2. Run the development server:
-   ```bash
-   npm start
-   ```
+In the project directory, you can run:
 
-## Usage
-- Open the website in a browser to explore the responsive design and navigate through the sections.
-- Customize the content in each section by editing the relevant files in the project directory (e.g., HTML, CSS, or JavaScript files for static sites, or React components for a framework-based site).
-- Update the portfolio, team, and blog sections with your agency’s specific content.
+### `npm start`
 
-## Technologies Used
-- **HTML5**: For semantic structure.
-- **CSS3**: For styling and responsive design (e.g., Flexbox, Grid, or frameworks like Tailwind CSS).
-- **JavaScript**: For interactivity and dynamic content (e.g., form validation, sliders).
-  
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-## Project Structure
-```
-agency-website/
-├── assets/                # Images, fonts, and other static assets
-├── css/                   # Stylesheets
-├── js/                    # JavaScript files
-├── index.html             # Main entry point
-├── pages/                 # HTML files for each section (e.g., about.html, services.html)
-├── README.md              # This file
-└── package.json           # (If applicable) Node.js dependencies and scripts
-```
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-## Contributing
-1. Fork the repository.
-2. Create a new branch for your feature or bug fix:
-   ```bash
-   git checkout -b feature-name
-   ```
-3. Commit your changes:
-   ```bash
-   git commit -m "Add feature or fix description"
-   ```
-4. Push to your branch:
-   ```bash
-   git push origin feature-name
-   ```
-5. Open a pull request with a detailed description of your changes.
+### `npm test`
 
-## License
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
